@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="description" content="Professional portfolio of Ahesan Ansari - Aspiring Data Science & Analytics specializing in modern web applications">
+    <title>Ahesan - Creative Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<!-- Navigation -->
+<body class="bg-gray-50 font-['Inter']">
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 shadow-sm transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <h1 class="text-2xl font-bold text-gray-900">Ahesan Ansari</h1>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Home</a>
+                        <a href="#about" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">About</a>
+                        <a href="#skills" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Skills</a>
+                        <a href="#projects" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Projects</a>
+                        <a href="#contact" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200">Contact</a>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <!-- Dark Mode Toggle Button -->
+                    <button id="dark-mode-toggle" class="dark-mode-btn p-2 rounded-lg transition-all duration-300 hover:scale-110">
+                        <i class="fas fa-sun text-xl text-yellow-500 dark-mode-icon"></i>
+                        <i class="fas fa-moon text-xl text-blue-500 dark-mode-icon hidden"></i>
+                    </button>
+                    <div class="md:hidden">
+                        <button class="mobile-menu-button text-gray-700 hover:text-blue-600 focus:outline-none focus:text-blue-600">
+                            <i class="fas fa-bars text-xl"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="mobile-menu hidden md:hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Home</a>
+                <a href="#about" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">About</a>
+                <a href="#skills" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Skills</a>
+                <a href="#projects" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Projects</a>
+                <a href="#contact" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-purple-50 relative overflow-hidden pt-16">
+        <div class="absolute inset-0 bg-grid-pattern opacity-5"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <div class="hero-content opacity-0 transform translate-y-10" id="hero-content">
+                <h1 class="text-5xl md:text-7xl font-bold text-gray-900 mb-6">
+                </h1>
+                Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">Ahesan Ansari</span>
+                <p class="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    Aspiring Data Scientist with hands-on experience in Python, Pandas, and Machine Learning.
+                    <a href="#projects" class="btn-primary">
+                        View My Work
+                        <i class="fas fa-eye mr-2"></i>
+                    </a>
+                    <a href="#contact" class="btn-secondary">
+                        <i class="fas fa-envelope mr-2"></i>
+                        Get In Touch
+                    </a>
+                    
+                </div>
+            </div>
+            <div class="mt-16 hero-image opacity-0 transform translate-y-10" id="hero-image">
+                <div class="relative">
+                    <div class="w-64 h-64 mx-auto bg-gradient-to-br from-blue-400 to-purple-600 rounded-full flex items-center justify-center shadow-2xl">
+                        <i class="fas fa-code text-white text-6xl"></i>
+                    </div>
+                    <div class="absolute -top-4 -right-4 w-8 h-8 bg-green-400 rounded-full animate-pulse"></div>
+                    <div class="absolute -bottom-4 -left-4 w-6 h-6 bg-yellow-400 rounded-full animate-pulse delay-1000"></div>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+            <div class="scroll-indicator animate-bounce">
+                <i class="fas fa-chevron-down text-gray-400 text-2xl"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4 section-title">About Me</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="about-content opacity-0 transform translate-x-10" id="about-content">
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-6">🔬 Driven Data Science Enthusiast | Turning Curiosity into Insight</h3>
+                        I'm a passionate and detail-oriented data science enthusiast currently building a strong foundation in data analysis, machine learning, and data visualization. With hands-on practice using tools like Python, Pandas, NumPy, Matplotlib, and Scikit-learn, I'm learning to transform raw data into actionable insights.
+                    </p>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        My focus lies in solving real-world problems using data — from cleaning and analyzing datasets to creating predictive models. I enjoy exploring Kaggle datasets, working on mini-projects, and learning how businesses use data to make decisions. and 
+                    </p>
+                    staying up-to-date with the latest industry trends.
+                    <div class="flex flex-wrap gap-4">
+                        <div class="flex items-center text-gray-600">
+                            <i class="fas fa-map-marker-alt text-blue-600 mr-2"></i>
+                        </div>
+                        <span>Palanpur, Gujarat</span>
+                        <div class="flex items-center text-gray-600">
+                            <i class="fas fa-graduation-cap text-blue-600 mr-2"></i>
+                            <span>Computer Science</span>
+                        </div>
+                        <div class="flex items-center text-gray-600">
+                            <i class="fas fa-briefcase text-blue-600 mr-2"></i>
+                        </div>
+                    </div>
+                    <span>1+ Years Experience</span>
+                </div>
+                <div class="about-image opacity-0 transform -translate-x-10" id="about-image">
+                    <div class="relative">
+                        <!-- Profile Picture -->
+                        <div class="mb-8 text-center">
+                            <div class="relative inline-block profile-picture">
+                                <div class="w-48 h-48 mx-auto rounded-full overflow-hidden shadow-2xl border-4 border-white">
+                                    <img 
+                                    src="Ahesan_pic (2).jpeg" 
+                                    alt="Ahesan Ansari - Aspiring Data Scientist🎯" 
+                                        class="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                                        onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCIgdmlld0JveD0iMCAwIDQwMCA0MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iNDAwIiBmaWxsPSIjRjNGNEY2Ii8+CjxjaXJjbGUgY3g9IjIwMCIgY3k9IjE2MCIgcj0iNjAiIGZpbGw9IiM5Q0EzQUYiLz4KPHBhdGggZD0iTTEwMCAzNDBDMTAwIDI4MCAxNDAgMjQwIDIwMCAyNDBDMjYwIDI0MCAzMDAgMjgwIDMwMCAzNDBIMTAwWiIgZmlsbD0iIzlDQTNBRiIvPgo8L3N2Zz4K'"
+                                    >
+                                </div>
+                                <div class="absolute -bottom-2 -right-2 w-8 h-8 bg-green-400 rounded-full border-4 border-white animate-pulse"></div>
+                                <div class="absolute -top-2 -left-2 w-6 h-6 bg-blue-400 rounded-full border-4 border-white animate-pulse delay-1000"></div>
+                            </div>
+                            <h4 class="text-xl font-semibold text-gray-900 mt-4">Ahesan Ansari</h4>
+                        </div>
+                        <p class="text-gray-600">Aspiring Data Science & Data Analytics</p>
+                        
+                        <!-- Statistics Cards -->
+                        <div class="bg-gradient-to-br from-blue-100 to-purple-100 rounded-2xl p-8 shadow-xl">
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="stat-card">
+                                    <div class="text-3xl font-bold text-blue-600">04+</div>
+                                    <div class="text-gray-600">Projects Completed</div>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="text-3xl font-bold text-purple-600">30+</div>
+                                    <div class="text-gray-600">Happy Clients</div>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="text-3xl font-bold text-green-600">1+</div>
+                                    <div class="text-gray-600">Years Experience</div>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="text-3xl font-bold text-orange-600">24/7</div>
+                                    <div class="text-gray-600">Support Available</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4 section-title">Skills & Technologies</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="skill-category opacity-0 transform translate-y-10" id="skill-category-1">
+                    <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <div class="text-center mb-6">
+                            <i class="fas fa-code text-4xl text-blue-600 mb-4"></i>
+                            <h3 class="text-xl font-semibold text-gray-900">Frontend Development</h3>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="skill-item">
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-700">HTML</span>
+                                    <span class="text-gray-500">95%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="skill-progress bg-blue-600 h-2 rounded-full" data-width="95"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-700">JavaScript</span>
+                                    <span class="text-gray-500">90%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="skill-progress bg-blue-600 h-2 rounded-full" data-width="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-700">CSS</span>
+                                    <span class="text-gray-500">85%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="skill-progress bg-blue-600 h-2 rounded-full" data-width="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category opacity-0 transform translate-y-10" id="skill-category-2">
+                    <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <div class="text-center mb-6">
+                            <i class="fas fa-server text-4xl text-purple-600 mb-4"></i>
+                            <h3 class="text-xl font-semibold text-gray-900">Backend Development</h3>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="skill-item">
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-700">SQL</span>
+                                    <span class="text-gray-500">88%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="skill-progress bg-purple-600 h-2 rounded-full" data-width="88"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-700">Python</span>
+                                    <span class="text-gray-500">82%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="skill-progress bg-purple-600 h-2 rounded-full" data-width="82"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-700">Database</span>
+                                    <span class="text-gray-500">80%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="skill-progress bg-purple-600 h-2 rounded-full" data-width="80"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category opacity-0 transform translate-y-10" id="skill-category-3">
+                    <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <div class="text-center mb-6">
+                            <i class="fas fa-tools text-4xl text-green-600 mb-4"></i>
+                            <h3 class="text-xl font-semibold text-gray-900">Tools & Others</h3>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="skill-item">
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-700">Git</span>
+                                    <span class="text-gray-500">92%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="skill-progress bg-green-600 h-2 rounded-full" data-width="92"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-700">Pandas</span>
+                                    <span class="text-gray-500">75%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="skill-progress bg-green-600 h-2 rounded-full" data-width="75"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-700">Power BI</span>
+                                    <span class="text-gray-500">78%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-progress bg-green-600 h-2 rounded-full" data-width="78"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4 section-title">Data Science & Data Analytics</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="project-card opacity-0 transform translate-y-10" id="project-1">
+                    <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group">
+                        <div class="relative overflow-hidden">
+                            <div class="w-full h-48 bg-gradient-to-br from-blue-400 to-purple-600 flex items-center justify-center">
+                                <div class="dashboard-preview">
+                                    <div class="chart-container">
+                                        <div class="bar-chart">
+                                            <div class="bar" style="height: 60%"></div>
+                                            <div class="bar" style="height: 80%"></div>
+                                            <div class="bar" style="height: 45%"></div>
+                                            <div class="bar" style="height: 90%"></div>
+                                            <div class="bar" style="height: 70%"></div>
+                                        </div>
+                                        <div class="pie-chart">
+                                            <div class="pie-slice slice1"></div>
+                                            <div class="pie-slice slice2"></div>
+                                            <div class="pie-slice slice3"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <div class="flex space-x-4">
+                                    <a href="#" class="text-white hover:text-blue-400 transition-colors duration-200">
+                                        <i class="fas fa-external-link-alt text-xl"></i>
+                                    </a>
+                                    <a href="#" class="text-white hover:text-blue-400 transition-colors duration-200">
+                                        <i class="fab fa-github text-xl"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Sales Analytics Dashboard</h3>
+                            <p class="text-gray-600 mb-4">(On going)Interactive dashboard analyzing sales performance with predictive modeling and real-time KPI tracking.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">Python</span>
+                                <span class="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">Tableau</span>
+                                <span class="px-3 py-1 bg-purple-100 text-purple-800 text-sm rounded-full">SQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card opacity-0 transform translate-y-10" id="project-2">
+                    <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group">
+                        <div class="relative overflow-hidden">
+                            <div class="w-full h-48 bg-gradient-to-br from-green-400 to-blue-600 flex items-center justify-center">
+                                <div class="dashboard-preview">
+                                    <div class="chart-container">
+                                        <div class="line-chart">
+                                            <div class="line-point" style="left: 10%; bottom: 20%"></div>
+                                            <div class="line-point" style="left: 30%; bottom: 40%"></div>
+                                            <div class="line-point" style="left: 50%; bottom: 60%"></div>
+                                            <div class="line-point" style="left: 70%; bottom: 80%"></div>
+                                            <div class="line-point" style="left: 90%; bottom: 70%"></div>
+                                            <div class="line-connection"></div>
+                                        </div>
+                                        <div class="metric-cards">
+                                            <div class="metric-card">
+                                                <div class="metric-value">85%</div>
+                                                <div class="metric-label">Accuracy</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <div class="flex space-x-4">
+                                    <a href="#" class="text-white hover:text-blue-400 transition-colors duration-200">
+                                        <i class="fas fa-external-link-alt text-xl"></i>
+                                    </a>
+                                    <a href="#" class="text-white hover:text-blue-400 transition-colors duration-200">
+                                        <i class="fab fa-github text-xl"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Customer Churn Prediction</h3>
+                            <p class="text-gray-600 mb-4">(On going)Machine learning model to predict customer churn with 85% accuracy using ensemble methods.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">Scikit-learn</span>
+                                <span class="px-3 py-1 bg-orange-100 text-orange-800 text-sm rounded-full">Pandas</span>
+                                <span class="px-3 py-1 bg-red-100 text-red-800 text-sm rounded-full">Matplotlib</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card opacity-0 transform translate-y-10" id="project-3">
+                    <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group">
+                        <div class="relative overflow-hidden">
+                            <div class="w-full h-48 bg-gradient-to-br from-purple-400 to-pink-600 flex items-center justify-center">
+                                <div class="dashboard-preview">
+                                    <div class="chart-container">
+                                        <div class="heatmap">
+                                            <div class="heatmap-row">
+                                                <div class="heatmap-cell high"></div>
+                                                <div class="heatmap-cell medium"></div>
+                                                <div class="heatmap-cell low"></div>
+                                            </div>
+                                            <div class="heatmap-row">
+                                                <div class="heatmap-cell medium"></div>
+                                                <div class="heatmap-cell high"></div>
+                                                <div class="heatmap-cell medium"></div>
+                                            </div>
+                                            <div class="heatmap-row">
+                                                <div class="heatmap-cell low"></div>
+                                                <div class="heatmap-cell medium"></div>
+                                                <div class="heatmap-cell high"></div>
+                                            </div>
+                                        </div>
+                                        <div class="scatter-plot">
+                                            <div class="scatter-point" style="left: 20%; bottom: 30%"></div>
+                                            <div class="scatter-point" style="left: 60%; bottom: 70%"></div>
+                                            <div class="scatter-point" style="left: 80%; bottom: 40%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                <div class="flex space-x-4">
+                                    <a href="#" class="text-white hover:text-blue-400 transition-colors duration-200">
+                                        <i class="fas fa-external-link-alt text-xl"></i>
+                                    </a>
+                                    <a href="#" class="text-white hover:text-blue-400 transition-colors duration-200">
+                                        <i class="fab fa-github text-xl"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Market Segmentation Analysis</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <p class="text-gray-600 mb-4">(On going)Clustering analysis to segment customers and identify market opportunities with interactive visualizations.</p>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">K-means</span>
+                                <span class="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">Seaborn</span>
+                                <span class="px-3 py-1 bg-yellow-100 text-yellow-800 text-sm rounded-full">NumPy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4 section-title">Get In Touch</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="contact-info opacity-0 transform translate-x-10" id="contact-info">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-6">Let's Work Together</h3>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        I'm always interested in new opportunities and exciting projects. 
+                        Whether you have a question or just want to say hi, feel free to reach out!
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center text-gray-600">
+                            <i class="fas fa-envelope text-blue-600 mr-4 text-xl"></i>
+                            <span>ansariahsan1510@gmail.com</span>
+                        </div>
+                        <div class="flex items-center text-gray-600">
+                            <i class="fas fa-phone text-blue-600 mr-4 text-xl"></i>
+                            <span>+91 9054849764</span>
+                        </div>
+                        <div class="flex items-center text-gray-600">
+                            <i class="fas fa-map-marker-alt text-blue-600 mr-4 text-xl"></i>
+                            <span>Palanpur,Gujrat</span>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <h4 class="text-lg font-semibold text-gray-900 mb-4">Follow Me</h4>
+                        <div class="flex space-x-4">
+                            <a href="https://github.com/ahesan2022" target="_blank" class="social-link">
+                                <i class="fab fa-github text-2xl"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/ahesan-ansari-576319244/" target="_blank" class="social-link">
+                                <i class="fab fa-linkedin text-2xl"></i>
+                            </a>
+                            <a href="https://x.com/ahesan_ansari8" target="_blank" class="social-link">
+                                <i class="fab fa-twitter text-2xl"></i>
+                            </a>
+                            <a href="https://www.instagram.com/ahesann_ansari?igsh=Z3J2d2NsYXlxdXpn" target="_blank" class="social-link">
+                                <i class="fab fa-instagram text-2xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form opacity-0 transform -translate-x-10" id="contact-form">
+                    <form class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Name</label>
+                                <input type="text" id="name" name="name" class="form-input" required>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-gray-700 mb-2">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-input" required>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                            <textarea id="message" name="message" rows="5" class="form-input" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary w-full">
+                            <i class="fas fa-paper-plane mr-2"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p class="text-gray-400 mb-6">Creating digital experiences that matter</p>
+                <h3 class="text-2xl font-bold mb-4">Ahesan Ansari</h3>
+                <div class="flex justify-center space-x-6 mb-8">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
+                        <i class="fab fa-linkedin text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                </div>
+                <p class="text-gray-400">&copy; 2025 Ahesan Ansari. All rights reserved.</p>
+                <div class="border-t border-gray-800 pt-8">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
